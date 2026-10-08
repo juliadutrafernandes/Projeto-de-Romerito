@@ -1,1 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rock Fest: shows, agenda, local e informações do festival.">
+  <title>Rock Fest 2026 | Festival de Música</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <!-- ========== NAVBAR (componente composto: logo + links) ========== -->
+  <header class="navbar" id="topo">
+    <div class="container navbar__content">
+      <a href="#topo" class="navbar__logo">Rock<span>Fest</span></a>
+
+      <nav class="navbar__nav" aria-label="Navegação principal">
+        <ul class="navbar__list">
+          <li><a href="#topo" class="nav-link nav-link--active">Início</a></li>
+          <li><a href="#destaques" class="nav-link">Shows</a></li>
+          <li><a href="#agenda" class="nav-link">Agenda</a></li>
+          <li><a href="#informacoes" class="nav-link">Informações</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" aria-labelledby="hero-titulo">
+      <div class="container hero__content">
+        <p class="hero__eyebrow">Festival de música &bull; 2026</p>
+        <h1 class="hero__title" id="hero-titulo">Sete dias de <span>música</span> sem parar</h1>
+        <p class="hero__text">
+          Reúna os amigos e viva a experiência de um dos maiores festivais do país:
+          grandes shows, vários palcos e uma energia que só quem vai sente.
+        </p>
+        <div class="hero__actions">
+          <a href="#destaques" class="btn btn--primary">Ver shows</a>
+          <a href="#agenda" class="btn btn--secondary">Ver agenda</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SHOWS EM DESTAQUE ========== -->
+    <section class="section" id="destaques" aria-labelledby="destaques-titulo">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title" id="destaques-titulo">Shows em destaque</h2>
+          <p class="section__subtitle">Os nomes que vão fazer o público cantar junto.</p>
+        </header>
+
+        <div class="cards">
+
+          <!-- Card de show (componente composto: imagem + badge + título + descrição + botão) -->
+          <article class="card">
+            <div class="card__media">
+              <img src="https://placehold.co/600x400/1a1a2e/ffffff?text=Banda+1" alt="Foto da Banda Aurora Elétrica no palco" class="card__image" loading="lazy">
+              <span class="badge badge--promo">Promoção</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Aurora Elétrica</h3>
+              <p class="card__text">Rock alternativo com guitarras marcantes e refrões para cantar de olhos fechados.</p>
+              <a href="#agenda" class="btn btn--primary btn--block">Ver detalhes</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media">
+              <img src="https://placehold.co/600x400/16213e/ffffff?text=Banda+2" alt="Foto da Banda Trovão Azul no palco" class="card__image" loading="lazy">
+              <span class="badge badge--soldout">Esgotado</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Trovão Azul</h3>
+              <p class="card__text">Pesada, intensa e cheia de energia. Um show para pular do início ao fim.</p>
+              <a href="#agenda" class="btn btn--primary btn--block">Ver detalhes</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media">
+              <img src="https://placehold.co/600x400/0f3460/ffffff?text=Banda+3" alt="Foto da Banda Noite Vermelha no palco" class="card__image" loading="lazy">
+              <span class="badge badge--promo">Promoção</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Noite Vermelha</h3>
+              <p class="card__text">Clássicos do rock reinventados em um espetáculo de luz, som e emoção.</p>
+              <a href="#agenda" class="btn btn--primary btn--block">Ver detalhes</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== AGENDA DE SHOWS ========== -->
+    <section class="section section--alt" id="agenda" aria-labelledby="agenda-titulo">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title" id="agenda-titulo">Agenda de shows</h2>
+          <p class="section__subtitle">Organize o seu roteiro e não perca nenhuma apresentação.</p>
+        </header>
+
+        <ol class="agenda">
+          <li class="agenda__item">
+            <time class="agenda__date" datetime="2026-09-18">
+              <span class="agenda__day">18</span>
+              <span class="agenda__month">Set</span>
+            </time>
+            <div class="agenda__info">
+              <h3 class="agenda__title">Aurora Elétrica</h3>
+              <p class="agenda__meta">Palco Mundo &bull; 21h00</p>
+            </div>
+            <span class="badge badge--promo">Promoção</span>
+          </li>
+
+          <li class="agenda__item">
+            <time class="agenda__date" datetime="2026-09-19">
+              <span class="agenda__day">19</span>
+              <span class="agenda__month">Set</span>
+            </time>
+            <div class="agenda__info">
+              <h3 class="agenda__title">Trovão Azul</h3>
+              <p class="agenda__meta">Palco Sunset &bull; 20h00</p>
+            </div>
+            <span class="badge badge--soldout">Esgotado</span>
+          </li>
+
+          <li class="agenda__item">
+            <time class="agenda__date" datetime="2026-09-20">
+              <span class="agenda__day">20</span>
+              <span class="agenda__month">Set</span>
+            </time>
+            <div class="agenda__info">
+              <h3 class="agenda__title">Noite Vermelha</h3>
+              <p class="agenda__meta">Palco Mundo &bull; 22h00</p>
+            </div>
+            <span class="badge badge--promo">Promoção</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ========== INFORMAÇÕES ========== -->
+    <section class="section" id="informacoes" aria-labelledby="info-titulo">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title" id="info-titulo">Informações</h2>
+          <p class="section__subtitle">Tudo o que você precisa saber antes de ir.</p>
+        </header>
+
+        <div class="info-grid">
+          <article class="info-block">
+            <h3 class="info-block__title">Local</h3>
+            <p class="info-block__text">Parque da Música, Av. Principal, 1000 &mdash; Rio de Janeiro, RJ.</p>
+          </article>
+
+          <article class="info-block">
+            <h3 class="info-block__title">Horários</h3>
+            <p class="info-block__text">Portões abertos a partir das 14h. Os shows começam às 16h.</p>
+          </article>
+
+          <article class="info-block">
+            <h3 class="info-block__title">Ingressos</h3>
+            <p class="info-block__text">Vendas online com meia-entrada e lotes promocionais por tempo limitado.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTATO E REDES SOCIAIS ========== -->
+    <section class="section section--dark" id="contato" aria-labelledby="contato-titulo">
+      <div class="container contact">
+        <div class="contact__text">
+          <h2 class="section__title" id="contato-titulo">Fale com a gente</h2>
+          <p class="section__subtitle">Dúvidas sobre o festival? Entre em contato ou acompanhe as novidades nas redes sociais.</p>
+          <a href="mailto:contato@rockfest.exemplo" class="btn btn--primary">Enviar e-mail</a>
+        </div>
+
+        <div class="contact__social">
+          <h3 class="contact__social-title">Redes sociais</h3>
+          <ul class="social-list">
+            <li><a href="#" class="nav-link">Instagram</a></li>
+            <li><a href="#" class="nav-link">YouTube</a></li>
+            <li><a href="#" class="nav-link">X (Twitter)</a></li>
+            <li><a href="#" class="nav-link">TikTok</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__content">
+      <a href="#topo" class="navbar__logo">Rock<span>Fest</span></a>
+      <p class="footer__text">&copy; 2026 Rock Fest. Projeto acadêmico de Design Web.</p>
+      <a href="#topo" class="nav-link">Voltar ao topo &uarr;</a>
+    </div>
+  </footer>
+
+</body>
+</html>
